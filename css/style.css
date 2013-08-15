@@ -1,0 +1,86 @@
+@font-face {
+        font-family: "Monozoid";
+        font-style: normal;
+        src: url(../font/Monozoid-05.otf); /*if IE */
+        src: local("Monozoid"), url("../font/Monozoid-05.otf") format("opentype"); /* non-IE */
+}
+
+html, body, .btn, #typer, button { font-family: Monozoid, helvetica, sans-serif }
+html, body { font-size:24px; background:#59595B url(../images/bg.gif) repeat 0 0 fixed; color:#fff; }
+body { overflow-y:scroll; }
+
+#device-new { height:170px; position:relative; }
+#device-new .device {}
+.tac { text-align:center; }
+button,
+#typer { font-size:30px; text-align:center; letter-spacing:1px }
+button[type=submit],
+.btn { font-size:18px; cursor:pointer; border:1px solid #000; }
+.btn:active { background-color:yellow; }
+.ttu { text-transform:uppercase; }
+.fs10 { font-size:10px; } 
+.fs11 { font-size:11px; } 
+.fs12 { font-size:12px; } 
+.fs13 { font-size:13px; } 
+.fs14 { font-size:14px; } 
+.fs15 { font-size:15px; } 
+.fs16 { font-size:16px; } 
+.fs17 { font-size:17px; } 
+.fs18 { font-size:18px; } 
+.fs19 { font-size:19px; } 
+.fs20 { font-size:20px; } 
+p { background-color:#f3f3f3; }
+
+.btn { width:50px; margin-right:3px; border-radius:3px; border:1px solid #222; }
+
+#glyph-buttons { background-color:#666; padding:20px 0; margin:10px auto; border:1px solid #aaa; border-radius:3px; max-width:720px; }
+
+.device { width:343px; background:url(../images/device.png) no-repeat 0 0; margin:20px auto; position:relative; }
+.device.device01 { height:91px; background-position:0 0;  }
+.device.device02 { height:99px; background-position:0 -109px;  }
+.device.device03 { height:52px; background-position:0 -230px;  }
+.device.device04 { height:126px; background-position:0 -295px;  }
+.device.device05 { height:152px; background-position:0 -442px;  }
+.device.device06 { height:103px; background-position:0 -631px;  }
+.device.device07 { height:152px; background-position:0 -774px;  }
+.device.device08 { height:109px; background-position:0 -976px;  }
+
+.device .label { word-break:break-all; color:#fff; border:1px solid #F15B29; border-radius:20px; position:absolute; bottom:7px; right:-151px; padding:5px; margin:20 0; width:120px; text-align:center; }
+.device .line { border-top:1px solid #F15B29; height:1px; width:120px; position:absolute; bottom:25px; right:-20px; }
+
+.label .num { font-size:16px; padding:5px; line-height:16px; color:#F15B29; }
+
+.device.r .label {  left:-151px; }
+.device.r .line { left:-20px; }
+
+.keyset0 { background-color:#c4df9b; }
+.keyset1 { background-color:#fdc689; }
+.keyset2 { background-color:#c7b299; }
+.keyset3 { background-color:#bdecff; }
+
+#devices.devices, 
+#device-new { padding:5px 0; margin:5px 0; background:url(../images/dash.gif) repeat-y center center; }
+
+@keyframes myfirst {
+	0% { top:-20px; }
+	50% {top:20px;}
+	100% {top:0px;}
+}
+
+@-webkit-keyframes myfirst {
+	0% { top:-20px; }
+	50% {top:20px;}
+	100% {top:0px;}
+}
+
+@-moz-keyframes myfirst {
+	0% { top:-20px; }
+	50% {top:20px;}
+	100% {top:0px;}
+}
+
+#device-new .device {
+	animation: myfirst 2s;
+	-webkit-animation: myfirst 2s;
+	-moz-animation: myfirst 2s; 
+}
